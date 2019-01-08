@@ -76,8 +76,3 @@ func PermutateNum(n int) PermutationType {
 func PermutateSlice(n []interface{}) PermutationType {
 	return &Permutable{Elements: n}
 }
-
-func main() {
-	c := PermutateSlice([]interface{}{"a", "b", "c"}).List()
-	fmt.Print(c)
-}
